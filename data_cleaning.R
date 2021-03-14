@@ -38,7 +38,7 @@ rownames(spy.us) <- NULL
 spy.us['direction'] <- rep("down", nrow(spy.us))
 spy.us$direction[spy.us$today >= 0] <- "up"
 
-# create outcome variable
+# create dummy outcome variable
 spy.us$up <- 0
 spy.us$up[spy.us$direction == 'up'] <- 1
 
