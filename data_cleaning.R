@@ -20,7 +20,7 @@ spy.us['volume.lag3'] <- c(NA, spy.us$volume.lag2[-3201])
 spy.us['volume.lag4'] <- c(NA, spy.us$volume.lag3[-3201]) 
 spy.us['volume.lag5'] <- c(NA, spy.us$volume.lag4[-3201]) 
 
-# add year as a variable rather than specific
+# add year as a variable in order to replace "date", which is too specific
 spy.us['year'] <- as.numeric(substring(spy.us$Date, 1, 4))
 
 # reorder the columns
