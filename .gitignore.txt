@@ -1,5 +1,7 @@
 .RData
 .Rhistory
-test
-stock_market_proj
+test.R
+.Rproj.user
+stock_market_proj.Rproj
+
 
