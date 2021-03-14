@@ -1,5 +1,5 @@
 .RData
 .Rhistory
 test
-.stock_market_proj
+stock_market_proj
 
