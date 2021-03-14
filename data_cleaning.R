@@ -1,5 +1,5 @@
 # obtain the dataset
-spy.us <- read.csv("~/Projects/stock market project/spy.us.txt")
+spy.us <- read.csv("~/Projects/stock_market_proj/spy.us.txt")
 
 # Use open and close to create percentage returns for the present day.
 spy.us['today'] <- round(spy.us$Close / spy.us$Open * 100 - 100, 3)
