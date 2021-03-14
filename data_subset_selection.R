@@ -15,7 +15,7 @@ y.test=y[test]
 grid=10^seq(10,-2, length =100)
 lasso.mod=glmnet(x[train ,],y[ train],alpha=1, family=binomial, lambda =grid)
 
-# implement lasso 
+# implement lasso and find which lambda performs best with cross-validation
 cv.out=cv.glmnet(x[train ,],y[ train],alpha=1, family=binomial)
 bestlam =cv.out$lambda.min
 out=glmnet(x,y,alpha=1, lambda=grid)
@@ -24,3 +24,6 @@ out=glmnet(x,y,alpha=1, lambda=grid)
 lasso.coef=predict(out, type='coefficients', s=bestlam) [1:13,]
 lasso.coef
 lasso.coef[lasso.coef != 0]
+
+# the variables that are selected include lag1, lag2, lag5, volume.lag1, volume.lag4, volume.lag5,
+# and volume.today.
