@@ -10,7 +10,7 @@ logreg.fit <- glm(up~lag1+lag2+lag5+volume.today+volume.lag1+volume.lag4+volume.
                   data=spy.us ,family=binomial)
 summary(logreg.fit)
 
-# use 10-fold cross validation to get the test error rather than the training error.
+# use 10-fold cross validation to get the test error rate.
 cost <- function(r, pi = 0) mean(abs(r-pi) > 0.5)
 cv.error <- cv.glm(spy.us,logreg.fit, cost, K=10)$delta[1]
 cv.error
@@ -53,7 +53,7 @@ for(i in 1:10){
 }
 
 mean(qda.cv.error)
-# the test error rate is 44.15%
+# the test error rate is 44.15%``
 
 
 # In conclusion, Logistic Regression performed very similarly to LDA. QDA produced the worst performance.
