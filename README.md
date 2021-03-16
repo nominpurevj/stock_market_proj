@@ -9,8 +9,11 @@ https://nominpurevj.github.io/data/science/project/2021/02/26/stock-market-proj.
 
 # Resources Used
 **Data**: [Huge Stock Market Dataset](https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs "Kaggle"). *Historical daily prices and volumes of all U.S. stocks and ETFs*. Kaggle. 2018.
-**Information about the stocks**: [SPY: SPDR S&P 500 Trust ETF](https://www.investopedia.com/articles/investing/122215/spy-spdr-sp-500-trust-etf.asp "Investopedia"). Investopedia. 2020.
+
+**Information about the ETFs**: [SPY: SPDR S&P 500 Trust ETF](https://www.investopedia.com/articles/investing/122215/spy-spdr-sp-500-trust-etf.asp "Investopedia"). Investopedia. 2020.
+
 **Book used for reference**: [An Introduction to Statistical Learning](https://www.statlearning.com/ "ISLR").
+
 **R Packages**: GGally, glmnet, ISLR, tidyverse, class, MASS, boot
 
 
