@@ -1,5 +1,5 @@
 # Predicting S&P 500 Returns: Project Overview
-* Built a machine learning model that helps predict whether the SPDR S&P 500 ETF will go up or down on a given using previous days returns and transaction volume.
+* Built a machine learning model that helps predict whether the SPDR S&P 500 ETF will go up or down on a given using previous days returns and transaction volumes.
 * Produced a test error rate of 41%, which shows improvement over pure chance (50%).
 * Selected the best variables for the model using LASSO.
 * Compared the performances of Logistic Regression, Linear Discriminant Analysis, and Quadratic Discriminant Analysis.
