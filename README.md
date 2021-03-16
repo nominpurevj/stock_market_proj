@@ -1,10 +1,3 @@
----
-layout: post
-title:  "Predicting S&P 500 Returns Based on Daily Stock Market Data"
-date:   2021-02-25 21:42:18 -0800
-categories: data science project
----
-
 # Introduction
 Predicting the ups and downs of the stock market has long been an extremely difficult problem to solve. Even after the insurgence of machine learning, most have not been successful at creating a model that predicts the stock market at a satisfactory level. Some even argue that the complexity of market makes it impossible to predict the market with enough efficiency.[^1]
 
