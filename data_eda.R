@@ -1,25 +1,24 @@
 library(GGally)
 
-# create a scatterplot matrix
+# Create a scatterplot matrix
 ggscatmat(spy.us, color = "direction")
 
-# Understandably, strong correlations are observed among the volumes of a 
-# given day and the days immediately preceding it. For instance, volume.lag2 
-# and volume.lag3 have a correlation of 0.85.
+# Observations:
+# Strong correlations are evident among trading volumes on consecutive days. 
+# For example, volume.lag2 and volume.lag3 exhibit a correlation of 0.85.
+# In contrast, volume.lag1 and volume.lag2 show only a weak correlation. 
+# While weak, these correlations are noteworthy, as most other variables are largely uncorrelated.
+# Similarly, volume.lag2 with lag3 and volume.lag3 with lag4 indicate that smaller returns on a given day 
+# may be associated with higher trading volumes on subsequent days.
 
-# Moreover, volume.lag1 and lag2 have a weak correlation. Even though the 
-# correlation is weak, it is worth noting as most variables are not correlated
-# at all. The same goes for volume.lag2+lag3 and volume.lag3+lag4. They hint 
-# that smaller returns in the market on a given day are associated with higher
-# volume of trading on the next day. 
-
-# Let's take a look at the relationship between volume and returns to get a 
-# clearer understanding of the correlation.
+# Next, examine the relationship between volume and returns for further insights
 ggplot(spy.us, aes(lag2, volume.lag1)) +
   geom_point() + 
   geom_smooth(se = FALSE)
 
-# this graph makes it clear why there is a negative associated between volume and the previous day's returns.
-# However, it does not necessarily seem to be the case that lower return on a given day is associated with more activity 
-# the next day. What more seems to be the case is that both high very low and very high returns on a given day
-# are associated with high volumes of exchange the next day. However, the skew is more towards the low returns.
+# Interpretation:
+# The plot illustrates a negative association between trading volume and the previous day's returns.
+# However, it does not consistently support the notion that lower returns on a given day 
+# directly result in higher trading activity the following day. 
+# Instead, both very low and very high returns appear to be associated with increased volumes 
+# on subsequent days, with the effect slightly more pronounced for lower returns.
