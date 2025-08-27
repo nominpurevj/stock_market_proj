@@ -1,9 +1,10 @@
 # Predicting S&P 500 Returns: Project Overview
-* Built a machine learning model that helps predict whether the SPDR S&P 500 ETF will go up or down on a given using previous days returns and transaction volumes.
-* Produced a test error rate of 41%, which shows improvement over pure chance (50%).
-* Selected the best variables for the model using LASSO.
-* Compared the performances of Logistic Regression, Linear Discriminant Analysis, and Quadratic Discriminant Analysis.
+Developed a **machine learning model** to predict whether the **SPDR S&P 500 ETF (SPY)** will move **up or down** on a given day using **historical returns** and **transaction volumes**.
 
+- 📊 **Model Performance:** Achieved a **test error rate of 41%**, outperforming random chance (**50%**).
+- 🔍 **Feature Selection:** Utilized **LASSO regression** to identify the most impactful predictors.
+- 🤖 **Model Comparison:** Evaluated and compared **Logistic Regression**, **Linear Discriminant Analysis (LDA)**, and **Quadratic Discriminant Analysis (QDA)**.
+  
 # Project Walk-Through
 https://nominpurevj.github.io/data/science/project/2021/02/26/stock-market-proj.html
 
@@ -15,6 +16,7 @@ https://nominpurevj.github.io/data/science/project/2021/02/26/stock-market-proj.
 **Book used for reference**: [An Introduction to Statistical Learning](https://www.statlearning.com/ "ISLR").
 
 **R Packages**: GGally, glmnet, ISLR, tidyverse, class, MASS, boot
+
 
 
 
